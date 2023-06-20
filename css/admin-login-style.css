@@ -92,6 +92,10 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color:var(--green);
 }
+.content p{
+	text-align: center;
+	border:1px solid red;
+}
 /* FOR MOBILE VIEW */
 @media screen and (max-width:700px){
 	.wrapper{
