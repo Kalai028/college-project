@@ -124,16 +124,6 @@ input[type=submit]:hover {
 	border-radius: 4px;
 	margin: 40px auto 0 auto;
 }
-.footer{
-	text-align: center;
-	padding: 30px;
-	font-size: 13px;
-	opacity: 0.9;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3));
-	position: absolute;
-	bottom: 0;
-	width: 100vw;
-}
 /* FOR MOBILE VIEW */
 @media screen and (max-width:700px){
 	.wrapper{
