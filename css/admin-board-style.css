@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+:root{
+	--violet:#9b59b6;
+	--grey:#dfe6e9;
+	--lightgrey: #f2f2f2;
+	--green:#4cd137;
+	--darkgreen: #009432;
+	--red: #EA2027;
+	--blue:#1B9CFC;
+	--sandal:#ffeaa7;
+}
+
+.wrapper{
+	height: 100vh;
+	display: flex;
+	position: relative;
+}
+
+/*-----SIDEBAR------*/
+.side-menu{
+	background-color: #273c75;
+	height: 100%;
+	width: 23%;
+	padding-top: 25px;
+}
+.side-menu img{
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+.side-menu a{
+	text-decoration: none;
+}
+.side-menu a li{
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	padding:5px 20px;
+	margin:15px 0;
+}
+.side-menu a .active{
+	border-left: 4px solid yellow;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0))
+}
+.side-menu a li:hover{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.side-menu a li i{
+	padding: 10px;
+	font-size: 23px;
+}
+/*view*/
+.view{
+	width: 77%;
+}
+.view form{
+	background-color: var(--grey);
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+}
+.view form input{
+	border-radius:3px;
+	border: 1px solid black;
+
+}
+.view form input:focus{
+	border: none;
+	outline:none;
+	border:1px solid dodgerblue;
+	box-shadow: 0.5px 0.5px 3px dodgerblue;
+}
+.view form button{
+	color:white;
+	background-color: var(--green);
+	text-shadow: 1px 1px 1px black;
+	border-radius:3px;
+	border:none;
+	box-shadow: 0px 0px 3px black;
+	padding: 2px 8px;
+}
+.view form button:hover{
+	background-color: var(--darkgreen);
+}
+.view table{
+	border-collapse: collapse;
+	width:90%;
+	margin: 20px auto;
+}
+th{
+	background-color: var(--sandal);
+}
+th, td {
+	padding: 8px;
+	text-align: left;
+}
+tr:nth-child(even){
+	background-color: var(--lightgrey);
+}
+.edit-btn, .update-btn{
+	background-color:var(--blue);
+	color: white;
+	border-radius: 3px;
+	border:1px solid var(--blue);
+	padding: 3px 7px;
+	margin-right: 10px;
+	font-weight: 600;
+	text-shadow: 1px 0.5px 2px black;
+}
+.update-btn{
+	background-color: #EAB543 !important;
+}
+i{
+	margin-right: 5px; 
+}
+.delete-btn{
+	background-color:var(--red);
+	color: white;
+	border-radius: 3px;
+	border:1px solid var(--red);
+	padding: 3px 7px;
+	font-weight: 600;
+	text-shadow: 1px 0.5px 2px black;
+}
+.view table input:focus{
+	outline:none;
+}
