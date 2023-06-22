@@ -135,7 +135,6 @@ input[type=submit]:hover {
 /* FOR MOBILE VIEW */
 @media screen and (max-width: 480px){
 	.wrapper{
-		background:transparent;
 		position: relative;
 	}
 	.header{
